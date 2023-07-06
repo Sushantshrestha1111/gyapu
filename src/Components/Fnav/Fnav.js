@@ -28,7 +28,7 @@ function Fnav() {
 export default Fnav;
 
 const Wrapper = styled.div`
-  height: 30px;
+  height: 34px;
   border-bottom: 1px solid;
   border-color:grey;
  

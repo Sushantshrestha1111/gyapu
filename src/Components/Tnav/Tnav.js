@@ -34,6 +34,7 @@ text-align: center;
 const Span = styled.span`
 margin:10px;
 color:white;
+font-family: 'Poppins', sans-serif;
 cursor:pointer;
 justify-content:center;
 align-items:center;
