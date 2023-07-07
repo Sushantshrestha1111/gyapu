@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { AiOutlineSearch,AiOutlineHeart,AiOutlineShoppingCart } from "react-icons/ai";
-
+import {FaUserAlt} from "react-icons/fa";
 
 function Snav() {
   return (
@@ -14,10 +14,11 @@ function Snav() {
                 <SearchIcon><AiOutlineSearch/></SearchIcon>
                 
                 </Span>
-                
-                
                 <Span><AiOutlineHeart/> Wish List</Span>
-                <Span><AiOutlineShoppingCart/> Cart</Span></Items>
+                <Span><AiOutlineShoppingCart/> Cart
+                <Cartcircle>0</Cartcircle>
+                </Span></Items>
+                <Span><FaUserAlt/></Span>
                 
             </Wrapper>
 
@@ -40,6 +41,17 @@ border-color: #e0e0e0;
 
 
 `
+const Cartcircle=styled.div`
+
+background-color: yellow;
+color:black;
+border-radius:50%;
+height:25px;
+width:25px;
+
+
+`
+
 const Wrapper = styled.div`
 display: flex;
 height: 70px;
