@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Card from '../Card/Card';
 
 export default function Home() {
   return (
@@ -7,6 +8,9 @@ export default function Home() {
         <Container>
             <Wrapper>
                 <h1>Top pick</h1>
+                <Card/>
+                <Card/>
+                
 
             </Wrapper>
         </Container>
