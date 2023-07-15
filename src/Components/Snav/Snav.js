@@ -1,9 +1,16 @@
-import React from 'react'
+import React,{useState,useEffect} from  'react';
 import styled from 'styled-components';
 import { AiOutlineSearch,AiOutlineHeart,AiOutlineShoppingCart } from "react-icons/ai";
 import {FaUserAlt} from "react-icons/fa";
 
+
 function Snav() {
+  const [cartCount,setCount]=useState(5);
+   
+  function increment() {
+    setCount(preavCount => preavCount+1)
+    console.log('Incremented');
+}
   return (
     <div>
       <Logo src="/images/gyapulogo.svg"></Logo>
@@ -16,7 +23,8 @@ function Snav() {
                 </Span>
                 <Span><AiOutlineHeart/> Wish List</Span>
                 <Span><AiOutlineShoppingCart/> Cart
-                <Cartcircle>0</Cartcircle>
+                <Cartcircle>{cartCount}</Cartcircle>
+                <button onClick={increment}>sdfsdf</button>
                 </Span></Items>
                 <Span><FaUserAlt/></Span>
                 
@@ -25,6 +33,9 @@ function Snav() {
     </div>
   )
 }
+ export function increment() {
+  // Function implementation
+};
 
 export default Snav
 const Container=styled.div`

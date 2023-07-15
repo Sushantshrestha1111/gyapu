@@ -1,18 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
+import {increment} from"../Snav/Snav"
+import { ddd } from '../Counter/Counter';
+
 
 
 function Card() {
-  const handleAddToCart = () => {
-    // Add your logic here for the 'Add to cart' functionality
-    console.log("Add to cart clicked");
-    // Perform any other actions as needed
-  };
+  
   
   return (
     <div>
         <Container>
-          <AddToCardButton onClick={handleAddToCart}> 
+          <AddToCardButton onClick={ddd}> 
             Add to cart
           </AddToCardButton>
 
